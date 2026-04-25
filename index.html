@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="三河市光大实验学校 - 融小学、初中、高中及多语种中心于一体的全日制学校，985/211名校直通车">
+    <meta name="keywords" content="三河市光大学校,光大实验学校,三河学校,小学,初中,高中,多语种,国际教育">
+    <title>三河市光大实验学校 - 求实尚美 厚德博学</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="光大学校" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-fallback" style="display: none;">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <span>光大实验学校</span>
+            </div>
+            <button class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- 侧边菜单 -->
+    <nav class="side-menu" id="sideMenu">
+        <div class="menu-header">
+            <h3>导航菜单</h3>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="menu-list">
+            <li><a href="#home"><i class="fas fa-home"></i> 首页</a></li>
+            <li><a href="#about"><i class="fas fa-school"></i> 学校简介</a></li>
+            <li><a href="#advantages"><i class="fas fa-star"></i> 核心优势</a></li>
+            <li><a href="#features"><i class="fas fa-lightbulb"></i> 办学特色</a></li>
+            <li><a href="#departments"><i class="fas fa-building"></i> 学部介绍</a></li>
+            <li><a href="#achievements"><i class="fas fa-trophy"></i> 办学成果</a></li>
+            <li><a href="#campus"><i class="fas fa-images"></i> 校园生活</a></li>
+            <li><a href="#admission"><i class="fas fa-file-alt"></i> 招生信息</a></li>
+            <li><a href="#contact"><i class="fas fa-phone"></i> 联系我们</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <!-- 首页轮播 -->
+        <section id="home" class="hero-section" style="width: 100vw !important; height: 100vh !important; position: relative !important; left: 50% !important; margin-left: -50vw !important; overflow: hidden !important;">
+            <div class="hero-slider" style="width: 100vw !important; height: 100vh !important;">
+                <div class="hero-slide active" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/teaching-building.jpg') center/cover; width: 100vw !important; height: 100vh !important; position: relative !important;">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <div class="school-badge">
+                            <i class="fas fa-award"></i>
+                            <span>正规办学资质 · 创建于2015年</span>
+                        </div>
+                        <h1 class="hero-title">三河市光大实验学校</h1>
+                        <p class="hero-subtitle">求实尚美 · 厚德博学</p>
+                        <p class="hero-desc">12年一贯制教育 · 985/211名校直通车</p>
+                        
+                        <div class="cta-buttons">
+                            <a href="#admission" class="cta-btn primary">
+                                <i class="fas fa-edit"></i> 立即报名
+                            </a>
+                            <a href="#contact" class="cta-btn secondary">
+                                <i class="fas fa-phone"></i> 咨询热线
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 学校数据统计 -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">3500+</div>
+                            <div class="stat-label">在校学生</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">550+</div>
+                            <div class="stat-label">教职员工</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">12年</div>
+                            <div class="stat-label">一贯制教育</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">4种</div>
+                            <div class="stat-label">多语种教学</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 学校简介 -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">学校简介</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-badge">
+                        <i class="fas fa-certificate"></i>
+                        <span>正规办学资质</span>
+                    </div>
+                    
+                    <div class="about-text">
+                        <p class="highlight-text">
+                            三河市光大实验学校创建于<strong>2015年</strong>，是经三河市教育和体育局批准的有正规办学资质的全日制学校。
+                        </p>
+                        <p>
+                            学校秉承"<strong class="motto">求实尚美、厚德博学</strong>"的校训，融小学、初中、高中（普高部、衡高部、职高部）及多语种中心（英语、德语、日语、西班牙语）于一体。
+                        </p>
+                        <p>
+                            学校设施一流、管理高效，师资力量雄厚，老中青相结合，教学成绩突出。每年有大批学生考入<strong>985、211重点大学</strong>，包含南开大学、北京邮电大学、吉林大学、重庆大学等，是学生读书成才的理想之地。
+                        </p>
+                        <div class="school-scale">
+                            <div class="scale-item">
+                                <i class="fas fa-users"></i>
+                                <span>在校生<strong>3500余人</strong></span>
+                            </div>
+                            <div class="scale-item">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>教职工<strong>550余人</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 核心优势 -->
+        <section id="advantages" class="section advantages-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">核心优势</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">六大优势 成就未来</p>
+                </div>
+
+                <div class="advantages-grid">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>一站式教育</h3>
+                        <p>12年一贯制，小学到高中无缝衔接，系统培养，省心省力</p>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>国际化视野</h3>
+                        <p>英语、德语、日语、西班牙语多语种中心，培养国际化人才</p>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-road"></i>
+                        </div>
+                        <h3>多元升学通道</h3>
+                        <p>普高、衡高、职高三大体系，满足不同学生发展需求</p>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>优质师资</h3>
+                        <p>550余名教职工，老中青结合，经验丰富，教学成绩突出</p>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>名校录取率高</h3>
+                        <p>每年大批学生考入985/211，南开、北邮、吉大、重大等名校</p>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>设施一流</h3>
+                        <p>现代化教学设施，标准化运动场馆，舒适的生活环境</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 办学特色 -->
+        <section id="features" class="section features-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">办学特色</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">三大特色体系 引领教育创新</p>
+                </div>
+
+                <!-- 衡中模式 -->
+                <div class="feature-block hengzhong-feature">
+                    <div class="feature-badge">
+                        <i class="fas fa-star"></i>
+                        <span>核心特色</span>
+                    </div>
+                    <h3 class="feature-title">
+                        <i class="fas fa-medal"></i>
+                        衡中模式 · 严谨高效
+                    </h3>
+                    <div class="feature-intro">
+                        <p class="feature-highlight">以<strong>严谨、激情、精细、高效</strong>为核心，打造跨越式提升教学体系</p>
+                    </div>
+                    <div class="feature-points">
+                        <div class="feature-point">
+                            <div class="point-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="point-content">
+                                <h4>精细化管理</h4>
+                                <p>培养学生自律与执行力，细化时间管理，实现精准提分</p>
+                            </div>
+                        </div>
+                        <div class="feature-point">
+                            <div class="point-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <div class="point-content">
+                                <h4>激情教育</h4>
+                                <p>塑造学生自信与担当，激发学习动力，培养拼搏精神</p>
+                            </div>
+                        </div>
+                        <div class="feature-point">
+                            <div class="point-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <div class="point-content">
+                                <h4>高效闭环</h4>
+                                <p>从教案到补习的完整闭环，帮助学生实现跨越式提升</p>
+                            </div>
+                        </div>
+                        <div class="feature-point">
+                            <div class="point-icon">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <div class="point-content">
+                                <h4>分层教学</h4>
+                                <p>因材施教，精准定位学生水平，实现个性化突破</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI精准学 -->
+                <div class="feature-block ai-feature">
+                    <div class="feature-badge tech">
+                        <i class="fas fa-robot"></i>
+                        <span>科技赋能</span>
+                    </div>
+                    <h3 class="feature-title">
+                        <i class="fas fa-brain"></i>
+                        AI精准学 · 智慧教育
+                    </h3>
+                    <div class="feature-intro">
+                        <p class="feature-highlight">依托<strong>大数据学情采集</strong>，实现精准分析与个性化教学</p>
+                    </div>
+                    <div class="feature-points">
+                        <div class="feature-point">
+                            <div class="point-icon tech">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="point-content">
+                                <h4>全场景数据采集</h4>
+                                <p>伴随式采集教学全场景学业数据，实现学情精准分析</p>
+                            </div>
+                        </div>
+                        <div class="feature-point">
+                            <div class="point-icon tech">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                            <div class="point-content">
+                                <h4>智能批改系统</h4>
+                                <p>作业智能批改，减轻教师负担，关注学生个性化需求</p>
+                            </div>
+                        </div>
+                        <div class="feature-point">
+                            <div class="point-icon tech">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div class="point-content">
+                                <h4>精准练习题库</h4>
+                                <p>高质量题库提供精准练习，支持变式训练，精准掌握薄弱点</p>
+                            </div>
+                        </div>
+                        <div class="feature-point">
+                            <div class="point-icon tech">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <div class="point-content">
+                                <h4>个性化学情分析</h4>
+                                <p>多维度学业数据支撑教学教研，满足个性化发展评价需求</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7+1教学模式 -->
+                <div class="feature-block teaching-feature">
+                    <div class="feature-badge teaching">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>教学创新</span>
+                    </div>
+                    <h3 class="feature-title">
+                        <i class="fas fa-book-open"></i>
+                        "7+1"教学模式 · 高效课堂
+                    </h3>
+                    <div class="feature-intro">
+                        <p class="feature-highlight">统一模式、统一标准，<strong>八个环节</strong>构建从"懂"到"会"再到"用"的闭环提升</p>
+                    </div>
+                    <div class="teaching-steps">
+                        <div class="teaching-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>导 · 精准导入</h4>
+                                <p>激发学生兴趣</p>
+                            </div>
+                        </div>
+                        <div class="teaching-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>学 · 自主学习</h4>
+                                <p>教师点拨引导</p>
+                            </div>
+                        </div>
+                        <div class="teaching-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>研 · 分组讨论</h4>
+                                <p>培养探究能力</p>
+                            </div>
+                        </div>
+                        <div class="teaching-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>展 · 激励展示</h4>
+                                <p>搭建表达舞台</p>
+                            </div>
+                        </div>
+                        <div class="teaching-step">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h4>评 · 教师精讲</h4>
+                                <p>突破重难点</p>
+                            </div>
+                        </div>
+                        <div class="teaching-step">
+                            <div class="step-number">6</div>
+                            <div class="step-content">
+                                <h4>理 · 课堂复盘</h4>
+                                <p>梳理知识体系</p>
+                            </div>
+                        </div>
+                        <div class="teaching-step">
+                            <div class="step-number">7</div>
+                            <div class="step-content">
+                                <h4>测 · 梯度小测</h4>
+                                <p>强化记忆落实</p>
+                            </div>
+                        </div>
+                        <div class="teaching-step highlight">
+                            <div class="step-number">+1</div>
+                            <div class="step-content">
+                                <h4>练 · 精准作业</h4>
+                                <p>全批全改闭环</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 学部介绍 -->
+        <section id="departments" class="section departments-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">学部介绍</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">全学段覆盖 因材施教</p>
+                </div>
+
+                <div class="departments-grid">
+                    <div class="department-card">
+                        <div class="department-header">
+                            <i class="fas fa-child"></i>
+                            <h3>小学部</h3>
+                        </div>
+                        <div class="department-content">
+                            <p class="department-slogan">快乐启蒙 习惯养成</p>
+                            <ul class="department-features">
+                                <li><i class="fas fa-check"></i> 注重基础教育</li>
+                                <li><i class="fas fa-check"></i> 培养学习兴趣</li>
+                                <li><i class="fas fa-check"></i> 养成良好习惯</li>
+                                <li><i class="fas fa-check"></i> 全面素质发展</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="department-card">
+                        <div class="department-header">
+                            <i class="fas fa-user-graduate"></i>
+                            <h3>初中部</h3>
+                        </div>
+                        <div class="department-content">
+                            <p class="department-slogan">全面发展 中考冲刺</p>
+                            <ul class="department-features">
+                                <li><i class="fas fa-check"></i> 强化学科基础</li>
+                                <li><i class="fas fa-check"></i> 中考精准备考</li>
+                                <li><i class="fas fa-check"></i> 培养自主学习</li>
+                                <li><i class="fas fa-check"></i> 综合能力提升</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="department-card highlight">
+                        <div class="department-header">
+                            <i class="fas fa-university"></i>
+                            <h3>普高部</h3>
+                        </div>
+                        <div class="department-content">
+                            <p class="department-slogan">人无我有 人有我精</p>
+                            <div class="department-special">
+                                <h4><i class="fas fa-gem"></i> 四大特色强校优势</h4>
+                            </div>
+                            <ul class="department-features">
+                                <li><i class="fas fa-check"></i> <strong>AI精准学体系</strong> - 量身定制学习方案，高效提分</li>
+                                <li><i class="fas fa-check"></i> <strong>生涯规划指导</strong> - 明确成长方向，科学规划未来</li>
+                                <li><i class="fas fa-check"></i> <strong>多元化升学渠道</strong> - 丰富升学路径，拓宽发展空间</li>
+                                <li><i class="fas fa-check"></i> <strong>激情德育体系</strong> - 塑造品格，激发成长动力</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="department-card highlight">
+                        <div class="department-header">
+                            <i class="fas fa-medal"></i>
+                            <h3>衡高部</h3>
+                        </div>
+                        <div class="department-content">
+                            <p class="department-slogan">衡水模式 严格管理</p>
+                            <ul class="department-features">
+                                <li><i class="fas fa-check"></i> 衡水教学模式</li>
+                                <li><i class="fas fa-check"></i> 高强度训练</li>
+                                <li><i class="fas fa-check"></i> 精细化管理</li>
+                                <li><i class="fas fa-check"></i> 冲刺重点大学</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="department-card">
+                        <div class="department-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>职高部</h3>
+                        </div>
+                        <div class="department-content">
+                            <p class="department-slogan">技能培养 双通道发展</p>
+                            <ul class="department-features">
+                                <li><i class="fas fa-check"></i> 专业技能培训</li>
+                                <li><i class="fas fa-check"></i> 对口高考升学</li>
+                                <li><i class="fas fa-check"></i> 就业推荐保障</li>
+                                <li><i class="fas fa-check"></i> 校企合作办学</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="department-card special">
+                        <div class="department-header">
+                            <i class="fas fa-language"></i>
+                            <h3>多语种中心</h3>
+                        </div>
+                        <div class="department-content">
+                            <p class="department-slogan">国际视野 留学直通</p>
+                            <ul class="department-features">
+                                <li><i class="fas fa-check"></i> 英语、德语教学</li>
+                                <li><i class="fas fa-check"></i> 日语、西班牙语</li>
+                                <li><i class="fas fa-check"></i> 小语种高考优势</li>
+                                <li><i class="fas fa-check"></i> 海外留学通道</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 办学成果 -->
+        <section id="achievements" class="section achievements-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">办学成果</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">桃李满天下 名校录取榜</p>
+                </div>
+
+                <div class="achievements-content">
+                    <div class="achievement-highlight">
+                        <i class="fas fa-award"></i>
+                        <h3>985/211名校录取</h3>
+                        <p>每年大批学生考入重点大学</p>
+                    </div>
+
+                    <div class="universities-grid">
+                        <div class="university-card">
+                            <i class="fas fa-university"></i>
+                            <h4>南开大学</h4>
+                            <span class="badge-985">985</span>
+                        </div>
+                        <div class="university-card">
+                            <i class="fas fa-university"></i>
+                            <h4>北京邮电大学</h4>
+                            <span class="badge-211">211</span>
+                        </div>
+                        <div class="university-card">
+                            <i class="fas fa-university"></i>
+                            <h4>吉林大学</h4>
+                            <span class="badge-985">985</span>
+                        </div>
+                        <div class="university-card">
+                            <i class="fas fa-university"></i>
+                            <h4>重庆大学</h4>
+                            <span class="badge-985">985</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-note">
+                        <i class="fas fa-info-circle"></i>
+                        <p>以上仅为部分录取院校展示，更多优秀学子考入各大名校</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 校园生活 -->
+        <section id="campus" class="section campus-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">校园生活</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">多彩校园 快乐成长</p>
+                </div>
+
+                <!-- 校园环境图片展示 -->
+                <div class="campus-gallery">
+                    <div class="gallery-item large">
+                        <img src="images/school-entrance.jpg" alt="学校正门" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>学校正门</h3>
+                            <p>三河市光大实验学校 欢迎您</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/modern-classroom.jpg" alt="现代化教室" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>现代化教室</h3>
+                            <p>多媒体教学设备齐全</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/computer-lab.jpg" alt="计算机房" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>计算机房</h3>
+                            <p>先进的信息技术设施</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/school-library.jpg" alt="图书馆" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>图书馆</h3>
+                            <p>海量藏书 知识海洋</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/sports-gymnasium.jpg" alt="体育馆" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>体育馆</h3>
+                            <p>专业体育运动场馆</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/pingpong-hall.jpg" alt="乒乓球馆" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>乒乓球馆</h3>
+                            <p>专业乒乓球训练场地</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/student-dormitory.jpg" alt="学生宿舍" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>学生宿舍</h3>
+                            <p>温馨舒适 如家一般</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/healthy-food1.jpg" alt="健康菜品" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>健康菜品</h3>
+                            <p>营养丰富 美味可口</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/healthy-food2.jpg" alt="特色美食" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>特色美食</h3>
+                            <p>精心烹饪 健康营养</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="campus-grid">
+                    <div class="campus-card">
+                        <div class="campus-icon">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <h3>优质教学</h3>
+                        <p>现代化教室，多媒体教学，小班化授课</p>
+                    </div>
+
+                    <div class="campus-card">
+                        <div class="campus-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h3>体育运动</h3>
+                        <p>标准运动场，篮球场，足球场，健身房</p>
+                    </div>
+
+                    <div class="campus-card">
+                        <div class="campus-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>艺术熏陶</h3>
+                        <p>音乐教室，美术室，舞蹈房，社团活动</p>
+                    </div>
+
+                    <div class="campus-card">
+                        <div class="campus-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>科学实验</h3>
+                        <p>物理、化学、生物实验室，科技创新中心</p>
+                    </div>
+
+                    <div class="campus-card">
+                        <div class="campus-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>营养餐饮</h3>
+                        <p>标准化食堂，营养配餐，卫生安全</p>
+                    </div>
+
+                    <div class="campus-card">
+                        <div class="campus-icon">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <h3>舒适住宿</h3>
+                        <p>标准化宿舍，空调暖气，24小时热水</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 招生信息 -->
+        <section id="admission" class="section admission-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">招生信息</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">欢迎报考光大实验学校</p>
+                </div>
+
+                <div class="admission-content">
+                    <div class="admission-notice">
+                        <i class="fas fa-bullhorn"></i>
+                        <h3>2026年招生火热进行中</h3>
+                        <p>小学、初中、高中各学部全面招生</p>
+                    </div>
+
+                    <div class="admission-info-grid">
+                        <div class="info-card">
+                            <i class="fas fa-clipboard-list"></i>
+                            <h4>招生对象</h4>
+                            <p>小学：适龄儿童</p>
+                            <p>初中：小学毕业生</p>
+                            <p>高中：初中毕业生</p>
+                        </div>
+
+                        <div class="info-card">
+                            <i class="fas fa-calendar-check"></i>
+                            <h4>报名时间</h4>
+                            <p>春季招生：1-3月</p>
+                            <p>秋季招生：5-8月</p>
+                            <p>常年接受咨询</p>
+                        </div>
+
+                        <div class="info-card">
+                            <i class="fas fa-file-alt"></i>
+                            <h4>报名材料</h4>
+                            <p>学生户口本</p>
+                            <p>近期免冠照片</p>
+                            <p>原学校成绩单</p>
+                        </div>
+
+                        <div class="info-card">
+                            <i class="fas fa-user-check"></i>
+                            <h4>录取方式</h4>
+                            <p>面试+笔试</p>
+                            <p>综合素质评估</p>
+                            <p>择优录取</p>
+                        </div>
+                    </div>
+
+                    <!-- 在线报名表单 -->
+                    <div class="enrollment-form">
+                        <h3><i class="fas fa-edit"></i> 在线预约报名</h3>
+                        <form id="enrollmentForm">
+                            <div class="form-group">
+                                <label>学生姓名 *</label>
+                                <input type="text" name="studentName" required placeholder="请输入学生姓名">
+                            </div>
+
+                            <div class="form-group">
+                                <label>性别 *</label>
+                                <select name="gender" required>
+                                    <option value="">请选择</option>
+                                    <option value="male">男</option>
+                                    <option value="female">女</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>报读学部 *</label>
+                                <select name="department" required>
+                                    <option value="">请选择</option>
+                                    <option value="primary">小学部</option>
+                                    <option value="middle">初中部</option>
+                                    <option value="high">普高部</option>
+                                    <option value="hengshui">衡高部</option>
+                                    <option value="vocational">职高部</option>
+                                    <option value="language">多语种中心</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>年级 *</label>
+                                <input type="text" name="grade" required placeholder="如：一年级、初一、高一">
+                            </div>
+
+                            <div class="form-group">
+                                <label>家长姓名 *</label>
+                                <input type="text" name="parentName" required placeholder="请输入家长姓名">
+                            </div>
+
+                            <div class="form-group">
+                                <label>联系电话 *</label>
+                                <input type="tel" name="phone" required placeholder="请输入手机号码">
+                            </div>
+
+                            <div class="form-group">
+                                <label>备注信息</label>
+                                <textarea name="remarks" rows="3" placeholder="其他需要说明的信息（选填）"></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i> 提交报名
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系我们 -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">联系我们</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">欢迎来电咨询或到校参观</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-card phone-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>招生热线</h3>
+                        <div class="phone-list">
+                            <a href="tel:17319127685" class="contact-link">
+                                <i class="fas fa-mobile-alt"></i> 173-1912-7685
+                            </a>
+                            <a href="tel:18034265209" class="contact-link">
+                                <i class="fas fa-mobile-alt"></i> 180-3426-5209
+                            </a>
+                            <a href="tel:19565118817" class="contact-link">
+                                <i class="fas fa-mobile-alt"></i> 195-6511-8817
+                            </a>
+                            <a href="tel:19511162561" class="contact-link">
+                                <i class="fas fa-mobile-alt"></i> 195-1116-2561
+                            </a>
+                            <a href="tel:19511162603" class="contact-link">
+                                <i class="fas fa-mobile-alt"></i> 195-1116-2603
+                            </a>
+                        </div>
+                        <p class="contact-time">工作时间：8:00-18:00</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>学校地址</h3>
+                        <p class="address-text">河北省廊坊市三河市<br>燕郊经济技术开发区<br>燕灵路236号(二中西门)</p>
+                        <a href="https://map.baidu.com/search/燕灵路236号/@12945750.17,4867822.5,19z?querytype=s&da_src=shareurl&wd=燕灵路236号&c=1&src=0&pn=0&sug=0&l=12&b=(12945750.17,4867822.5;12945750.17,4867822.5)&from=webmap&biz_forward={"scaler":1,"styles":"pl"}&device_ratio=1" target="_blank" class="contact-link">
+                            <i class="fas fa-directions"></i> 导航到校
+                        </a>
+                    </div>
+
+                    <div class="contact-card qrcode-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-weixin"></i>
+                        </div>
+                        <h3>微信公众号</h3>
+                        <div class="qrcode-container">
+                            <img src="images/qrcode.png" alt="公众号二维码" class="qrcode-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="qrcode-placeholder" style="display: none;">
+                                <i class="fas fa-qrcode"></i>
+                                <p>扫码关注</p>
+                            </div>
+                        </div>
+                        <p>扫码关注获取最新资讯</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>校园开放日</h3>
+                        <p>每周六、周日</p>
+                        <p class="open-time">上午 9:00-11:30<br>下午 14:00-17:00</p>
+                        <a href="#admission" class="contact-link">
+                            <i class="fas fa-user-plus"></i> 预约参观
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 地图占位 -->
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>学校位置</h3>
+                        <p>河北省廊坊市三河市燕郊经济技术开发区燕灵路236号</p>
+                        <a href="https://map.baidu.com/search/燕灵路236号/@12945750.17,4867822.5,19z?querytype=s&da_src=shareurl&wd=燕灵路236号&c=1&src=0&pn=0&sug=0&l=12&b=(12945750.17,4867822.5;12945750.17,4867822.5)&from=webmap&biz_forward={"scaler":1,"styles":"pl"}&device_ratio=1" target="_blank" class="map-link">
+                            <i class="fas fa-external-link-alt"></i> 在地图中查看
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>三河市光大实验学校</h3>
+                    <p class="motto">求实尚美 · 厚德博学</p>
+                    <p>创建于2015年 · 正规办学资质</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#about">学校简介</a>
+                    <a href="#departments">学部介绍</a>
+                    <a href="#admission">招生信息</a>
+                    <a href="#contact">联系我们</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 三河市光大实验学校 版权所有</p>
+                <p>地址：河北省廊坊市三河市燕郊经济技术开发区燕灵路236号(二中西门)</p>
+                <p>招生热线：173-1912-7685 / 180-3426-5209 / 195-6511-8817 / 195-1116-2561 / 195-1116-2603</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 悬浮按钮 -->
+    <div class="floating-buttons">
+        <a href="tel:17319127685" class="float-btn phone-btn" title="电话咨询">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="#admission" class="float-btn register-btn" title="在线报名">
+            <i class="fas fa-edit"></i>
+        </a>
+        <button class="float-btn top-btn" id="topBtn" title="返回顶部">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
